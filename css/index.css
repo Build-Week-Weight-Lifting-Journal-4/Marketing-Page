@@ -186,6 +186,8 @@ nav .navigation a {
   width: 100%;
   height: 35vh;
   margin: 0 auto;
+  object-fit: cover;
+  object-position: center 80%;
 }
 @media ( max-width: 600px ) {
   .intro .barbell {
@@ -234,6 +236,8 @@ nav .navigation a {
 }
 .topSection .strong .squat {
   width: 40%;
+  object-fit: cover;
+  object-position: center 80%;
 }
 @media ( max-width: 600px ) {
   .topSection .strong .squat {
@@ -255,6 +259,8 @@ nav .navigation a {
 }
 .topSection .lean .group {
   width: 40%;
+  object-fit: cover;
+  object-position: center 80%;
 }
 @media ( max-width: 600px ) {
   .topSection .lean .group {
@@ -280,6 +286,8 @@ nav .navigation a {
 }
 .bottomSection .healthy .dumbbells {
   width: 40%;
+  object-fit: cover;
+  object-position: center 80%;
 }
 @media ( max-width: 600px ) {
   .bottomSection .healthy .dumbbells {
@@ -301,6 +309,8 @@ nav .navigation a {
 }
 .bottomSection .better .rows {
   width: 40%;
+  object-fit: cover;
+  object-position: center 80%;
 }
 @media ( max-width: 600px ) {
   .bottomSection .better .rows {
