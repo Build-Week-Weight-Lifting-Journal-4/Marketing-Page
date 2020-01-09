@@ -1,0 +1,79 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    
+    .barbell{
+        width:100%;
+        height: 40vh;
+        margin: 0 auto;
+     }//closes out barbell
+
+    .summary{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 3%;
+    
+        .btn {
+            .custom-button(@primaryColor, @secondaryColor);
+            margin: 0 auto;
+            margin-top: 2%;
+        }
+    }//closes out summary
+}//closes intro
+
+
+.topSection{
+    display: flex;
+    flex-direction: column;
+
+    .strong{
+        .imageformatting();
+
+            .squat{
+                width: 40%;
+            }//closes out squat
+    }//closes out strong
+       
+    .lean{
+        .imageformatting();
+
+            .group{
+                width: 40%;
+        }//closes out group
+    
+    }//closes out lean   
+    
+}//closes out topSection
+
+.bottomSection{
+    display: flex;
+    flex-direction: column;
+
+    .healthy{
+        .imageformatting();
+
+            .dumbbells{
+                width:40%;
+            }//closes out dumbbells
+    
+    }//closes out healthy
+       
+    .better{
+        .imageformatting();
+
+            .rows{
+                width: 40%;
+        }//closes out rows
+    
+    }//closes out better 
+    
+}//closes out bottomSection
+
+.text{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 45%;
+    padding: 8% 0;
+}

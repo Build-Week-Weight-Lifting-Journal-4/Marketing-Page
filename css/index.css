@@ -157,6 +157,7 @@ p {
   line-height: 1.4;
 }
 nav {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -176,4 +177,88 @@ nav .navigation a {
   width: auto;
   color: white;
   padding: 0 2%;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.intro .barbell {
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+}
+.intro .summary {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3%;
+}
+.intro .summary .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C62828;
+  color: #F6F7F8;
+  font-size: 1.8rem;
+  width: 105px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.intro .summary .btn:hover {
+  background-color: #F6F7F8;
+  color: #C62828;
+}
+.topSection {
+  display: flex;
+  flex-direction: column;
+}
+.topSection .strong {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+.topSection .strong .squat {
+  width: 40%;
+}
+.topSection .lean {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+.topSection .lean .group {
+  width: 40%;
+}
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+}
+.bottomSection .healthy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+.bottomSection .healthy .dumbbells {
+  width: 40%;
+}
+.bottomSection .better {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+.bottomSection .better .rows {
+  width: 40%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 45%;
+  padding: 8% 0;
 }
