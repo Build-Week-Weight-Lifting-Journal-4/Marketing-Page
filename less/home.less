@@ -4,10 +4,18 @@
     
     .barbell{
         width:100%;
-        height: 40vh;
+        height: 35vh;
         margin: 0 auto;
-     }//closes out barbell
+        object-fit: cover;
+        object-position: center 80%;
 
+        @media @phone{
+            height: 20vh;
+        }//closes media
+
+       
+     }//closes out barbell
+   
     .summary{
         display:flex;
         flex-direction: column;
@@ -18,29 +26,55 @@
             .custom-button(@primaryColor, @secondaryColor);
             margin: 0 auto;
             margin-top: 2%;
-        }
+        }//closes btn
+    
     }//closes out summary
+
 }//closes intro
 
 
 .topSection{
     display: flex;
     flex-direction: column;
-
+    
     .strong{
-        .imageformatting();
+        .imageFormatting();
 
-            .squat{
-                width: 40%;
+            @media @phone{
+                display:flex;
+                flex-direction: column;
+            }//closes media
+        
+           .squat{
+               .imageSizing();
+
+                @media @phone{
+                    margin: 0 auto;
+                    width:80%;
+                }//closes media
+              
+
             }//closes out squat
-    }//closes out strong
+   
+     }//closes out strong
        
     .lean{
-        .imageformatting();
+        .imageFormatting();
+
+        @media @phone{
+            display:flex;
+            flex-direction: column-reverse;
+        }//closes media
 
             .group{
-                width: 40%;
-        }//closes out group
+                .imageSizing();
+               
+                @media @phone{
+                    margin: 0 auto;
+                    width:80%;
+                }//closes media
+        
+            }//closes out group
     
     }//closes out lean   
     
@@ -51,20 +85,43 @@
     flex-direction: column;
 
     .healthy{
-        .imageformatting();
+        .imageFormatting();
 
-            .dumbbells{
-                width:40%;
-            }//closes out dumbbells
+        @media @phone{
+            display:flex;
+            flex-direction: column;
+        }//closes media
+            
+        .dumbbells{
+            .imageSizing();
+
+                @media @phone{
+                    margin: 0 auto;
+                    width:80%;
+                }//closes media
+        
+        }//closes out dumbbells
     
     }//closes out healthy
        
     .better{
-        .imageformatting();
-
+        .imageFormatting();
+        
+            @media @phone{
+                display:flex;
+                flex-direction: column-reverse;
+        
+            }//closes media
+            
             .rows{
-                width: 40%;
-        }//closes out rows
+                .imageSizing();
+
+                @media @phone{
+                    margin: 0 auto;
+                    width:80%;
+                }//closes media
+       
+            }//closes out rows
     
     }//closes out better 
     
@@ -76,4 +133,10 @@
     text-align: center;
     width: 45%;
     padding: 8% 0;
-}
+
+    @media @phone{
+        margin: 0 auto;
+        width:80%;
+    }//closes media
+
+}//closes text
