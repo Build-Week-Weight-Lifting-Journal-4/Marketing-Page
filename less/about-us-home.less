@@ -1,0 +1,30 @@
+.about-us{
+    margin-top: 5%;
+}
+    .about-container{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: 5%;
+        width: 60%;
+        margin-bottom: 5%;
+        @media @tablet{
+            width: 100%;
+            flex-flow: column wrap;
+        }
+        @media @phone{
+            align-items: center;
+        }
+        .headshot{
+        height: 150px;
+        width: 100px;
+        }
+        .about-text-container{
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 2.0rem;
+        @media @tablet{
+            margin-left: 25%;
+            margin-left: 0;
+        }
+        }
+    }
